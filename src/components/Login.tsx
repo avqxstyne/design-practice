@@ -2,7 +2,8 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div className="login">
+    <div className='login-bg'>
+        <div className="login">
 
             <div className="icon">
                 <span className="material-symbols-outlined">
@@ -17,6 +18,7 @@ const Login = () => {
                 <div className="forgot-password">Forgot password?</div>
             </form>
         </div>
+    </div>
   )
 }
 
