@@ -12,8 +12,14 @@ const Login = () => {
             </div>
 
             <form className="login-form">
-                <input type="email" className="login-form-email" />
-                <input type="password" className="login-form-password" />
+                <div className='email-input-wrapper'>
+                    <input type="email" className="login-form-email"/>
+                    <div className="line"></div>
+                </div>
+                <div className='password-input-wrapper'>
+                    <input type="password" className="login-form-password" />
+                    <div className="line"></div>
+                </div>
                 <button type='submit' className="login-form-submit">Submit</button>
                 <div className="forgot-password">Forgot password?</div>
             </form>

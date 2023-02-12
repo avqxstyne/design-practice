@@ -10,7 +10,7 @@ html, body, #root, .App, .login-bg, .home-bg {
 * {
   letter-spacing: 0.15ch;
   font-family: 'Oswald', sans-serif;
-
+  box-sizing: border-box;
 }
 
 :root {
@@ -18,7 +18,8 @@ html, body, #root, .App, .login-bg, .home-bg {
   --font-main: 'Oswald', sans-serif;
 }
 .login-bg {
-  background: url('../../public/layered-waves-haikei.png');
+  background: url('../../public/layered-waves-haikei.svg');
+  animation: fade-in 1.5s both;
 }
 
 .login-bg {
@@ -41,57 +42,12 @@ html, body, #root, .App, .login-bg, .home-bg {
 
 
 
-
-.sidebar {
-  background: linear-gradient(to top, var(--primary-color), #094d7a);
-  color: white;
-  // position: absolute;
-  // left: 0;
-  // top: 0;
-  // bottom: 0;
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
-  box-shadow: 0px 2.5px 15px rgb(87, 87, 87);
-  .sidebar-profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    .pfp {
-      background-color: brown;
-      border-radius: 99999px;
-      height: 3rem;
-      width: 3rem;
-    }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
   }
-
-  .sidebar-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    &>div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-    }
-  }
-}
-
-
-.finance {
-
-  background-color: white;
-  box-shadow: 0px 2.5px 15px rgb(163, 163, 163);
-  margin-top: 3rem;
-  border-radius: 2rem;
-  padding: 3rem;
 }
 
 
